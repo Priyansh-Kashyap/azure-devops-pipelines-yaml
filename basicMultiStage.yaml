@@ -1,0 +1,39 @@
+trigger: 
+-  main
+
+pool: 
+  vmImage: 'ubuntu-latest'
+
+stages:
+-  stage: BuildStage
+   displayName: "Building Application"
+
+   jobs:
+   -  job: DeveloperCoding
+      displayName: "Coding"
+
+      steps: 
+      -  bash: |
+          echo "Coding Accomplished"
+
+-  stage: TestingStage
+   displayName: "Testing Application"
+
+   jobs:
+   -  job: UnitTesting
+      displayName: "WhiteBox Testing"
+
+      steps: 
+      -  bash: |
+          echo "Testing Accomplished"
+
+-  stage: DeploymentStage
+   displayName: "Deploying Application"
+
+   jobs:
+   -  job: DevOpsEngineerDeployment
+      displayName: "Pushing Code to Production"
+
+      steps:
+      -  bash: |
+          echo "Deployment Accomplished"
