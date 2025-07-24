@@ -13,8 +13,10 @@ stages:
       displayName: "Coding"
 
       steps: 
-      -  bash: |
-          echo "Coding Accomplished"
+      - powershell: |
+              Write-Host "Coding Accomplished"
+               Get-Location
+               displayName: 'Coding Accomplished'
 
 -  stage: TestingStage
    displayName: "Testing Application"
@@ -24,8 +26,10 @@ stages:
       displayName: "WhiteBox Testing"
 
       steps: 
-      -  bash: |
-          echo "Testing Accomplished"
+      - powershell: |
+              Write-Host "Testing Accomplished"
+               Get-Location
+               displayName: 'Testing Accomplished'
 
 -  stage: DeploymentStage
    displayName: "Deploying Application"
@@ -35,5 +39,7 @@ stages:
       displayName: "Pushing Code to Production"
 
       steps:
-      -  bash: |
-          echo "Deployment Accomplished"
+      - powershell: |
+              Write-Host "Deployment Accomplished"
+               Get-Location
+               displayName: 'Deployment Accomplished'
