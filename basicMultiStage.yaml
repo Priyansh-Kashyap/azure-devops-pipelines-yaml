@@ -14,8 +14,8 @@ stages:
 
       steps: 
       - powershell: |
-              echo "Coding Accomplished"
-               displayName: 'Coding Accomplished'
+         echo "Coding Accomplished"
+        displayName: 'Coding Accomplished'
 
 -  stage: TestingStage
    displayName: "Testing Application"
@@ -26,8 +26,8 @@ stages:
 
       steps: 
       - powershell: |
-             echo "Coding Accomplished"
-               displayName: 'Testing Accomplished'
+         echo "Coding Accomplished"
+        displayName: 'Testing Accomplished'
 
 -  stage: DeploymentStage
    displayName: "Deploying Application"
@@ -38,5 +38,5 @@ stages:
 
       steps:
       - powershell: |
-              echo "Coding Accomplished"
-               displayName: 'Deployment Accomplished'
+         echo "Coding Accomplished"
+        displayName: 'Deployment Accomplished'
