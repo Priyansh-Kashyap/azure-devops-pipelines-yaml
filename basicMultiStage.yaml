@@ -14,8 +14,7 @@ stages:
 
       steps: 
       - powershell: |
-              Write-Host "Coding Accomplished"
-               Get-Location
+              echo "Coding Accomplished"
                displayName: 'Coding Accomplished'
 
 -  stage: TestingStage
@@ -27,8 +26,7 @@ stages:
 
       steps: 
       - powershell: |
-              Write-Host "Testing Accomplished"
-               Get-Location
+             echo "Coding Accomplished"
                displayName: 'Testing Accomplished'
 
 -  stage: DeploymentStage
@@ -40,6 +38,5 @@ stages:
 
       steps:
       - powershell: |
-              Write-Host "Deployment Accomplished"
-               Get-Location
+              echo "Coding Accomplished"
                displayName: 'Deployment Accomplished'
